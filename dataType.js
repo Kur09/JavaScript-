@@ -12,5 +12,28 @@ let isLoggedIn = false
 //undefine => not assign any value
 
 
-console.log(typeof undefined); // undefined
-console.log(typeof NULL);// object;
+//console.log(typeof undefined); // undefined
+// console.log(typeof null);// object;
+
+
+
+//Primitive
+
+// 7 types : String, NUmber, Boolean, null,undefined, Symbol,BigInt
+
+// Dynamic type language
+
+// Reference (Non primitive)
+// Array, Objects, Functions
+
+    const heros = ["shaktima", "naagraj", "doga"];
+    let myObj = {
+        name: "Keyur",
+        age: 23
+    }
+const myFunction  = function(){
+    console.log("Hello Keyur");
+}
+
+console.log(typeof heros); // object
+
