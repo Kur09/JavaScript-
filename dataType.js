@@ -37,3 +37,26 @@ const myFunction  = function(){
 
 console.log(typeof heros); // object
 
+///++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (Primitive) ==> copy, Heap(Non-Primitive) => reference 
+
+let myName = "Keyur"
+
+let anotherName = myName;
+anotherName = "Ninama"
+
+console.log(anotherName)
+console.log(myName);
+
+let userOne = {
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "keyur@gmail.com"
+
+
+console.log(userOne.email);
+console.log(userTwo.email);
