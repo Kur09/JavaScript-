@@ -46,8 +46,8 @@ let myName = "Keyur"
 let anotherName = myName;
 anotherName = "Ninama"
 
-console.log(anotherName)
-console.log(myName);
+// console.log(anotherName)
+// console.log(myName);
 
 let userOne = {
     email:"user@gmail.com",
@@ -58,5 +58,25 @@ let userTwo = userOne
 userTwo.email = "keyur@gmail.com"
 
 
-console.log(userOne.email);
-console.log(userTwo.email);
+// console.log(userOne.email);
+// console.log(userTwo.email);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// String
+
+
+const fname = "keyur"
+const repoCout = 50
+
+// console.log(`Hello my name is ${fname} and my repo count is ${repoCout}`)
+
+
+const gameName = new String('kninama')
+
+// console.log(gameName[0])
+// console.log(gameName.__proto__)
+
+console.log(gameName.length);
+console.log(gameName.toUpperCase())
+console.log(gameName.charAt(2));
