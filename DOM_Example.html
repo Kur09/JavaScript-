@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+  </head>
+  <body>
+      <section>
+        <img src="https://mdn.github.io/learning-area/javascript/apis/document-manipulation/dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+
+        <ul class="language">
+          <li>JavaScript</li>
+        </ul>
+      </section>
+       
+   
+  </body>
+  <script>
+    //  const link = document.querySelector("a");
+    // link.textContent = "Mozilla Developer Network";
+    // link.href = "https://developer.mozilla.org";
+
+
+    // const sec = document.querySelector("section");
+    // const par = document.createElement("p");
+    // par.textContent = "We Hope you enjoy the ride"
+
+
+    // sec.appendChild(par)
+
+
+    // const text = document.createTextNode("— the premier source for web development knowledge.");
+    // const linkPara = document.querySelector("p")
+    // linkPara.appendChild(text);
+
+    // console.log(text);
+
+    function addlist(langName){
+       const list = document.createElement('li');
+       list.innerHTML = `${langName}`;
+       document.querySelector('.language').appendChild(list)
+    }
+    addlist("python");
+    addlist("typescript")
+
+
+    //edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // console.log(secondLang)
+    const newli = document.createElement('li');
+    const textNode = document.createTextNode('Mojo'); 
+    newli.appendChild(textNode); 
+    secondLang.replaceWith(newli)
+</script>
+  
+</html>
