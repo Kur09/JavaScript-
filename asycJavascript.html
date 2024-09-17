@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Keyur Ninama</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const sayHitesh = function(){
+    //     console.log("Keyur");
+    // }
+    // const changeText = function(){
+    //     document.querySelector('h1').innerHTML = "best JS series"
+    // }
+
+    // const changeMe = setTimeout(changeText, 2000)
+
+    // document.querySelector('#stop').addEventListener('click', function(){
+    //     clearTimeout(changeMe)
+    //     console.log("STOPPED")
+    // })
+    // const sayDate = function (str) {
+    //     console.log(str, Date.now());
+    // }
+    // const btn = document.querySelector("button");
+
+    let setColor
+    function random(number) {
+        return Math.floor(Math.random() * (number + 1));
+    }
+
+    const setcol = () => {
+        const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+        document.body.style.backgroundColor = rndCol;
+    }
+
+    document.querySelector('#start').addEventListener('click', function (e) {
+        if(!setColor)
+        setColor = setInterval(setcol, 1000)
+    })
+
+    document.querySelector('#stop').addEventListener('click', function (e) {
+        clearInterval(setColor);
+        setColor = null;
+    })
+
+
+</script>
+
+</html>
